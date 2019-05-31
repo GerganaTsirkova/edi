@@ -1,0 +1,8 @@
+.main-img-container {
+    width: 100vw;
+    height: 42em;
+    overflow: hidden;
+    z-index: -1;
+    background: linear-gradient(rgba(black, 0.2), rgba(black, 0.2)), url("/images/main1.jpg") center center no-repeat;
+    background-size: cover;
+}

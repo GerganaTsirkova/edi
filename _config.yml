@@ -1,0 +1,16 @@
+title: Template setup jekyll project
+email: g_cirkova@mail.bg
+description: template
+destination: docs
+# baseurl: "/edi"
+# baseurl: ""
+url: "https://github.com/GerganaTsirkova/edi"
+twitter_username: GerganaTsirkova
+github_username: GerganaTsirkova
+exclude: [_assets, node_modules, Gemfile, Gemfile.lock, gulpfile.js, package.json, package-lock.json, README.md,docs]
+# Build settings
+markdown: kramdown
+plugins:
+- jekyll-feed
+- jekyll-sitemap
+- github-pages
