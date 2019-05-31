@@ -1,8 +1,6 @@
-.main-img-container {
+.img-container-first-page {
     width: 100vw;
-    height: 42em;
-    overflow: hidden;
-    z-index: -1;
-    background: linear-gradient(rgba(black, 0.2), rgba(black, 0.2)), url("/images/main1.jpg") center center no-repeat;
+    height: 90vh;
+    background: linear-gradient(rgba($base-dark, 0.2), rgba($base-dark, 0)), url("/images/main1.jpg") center no-repeat;
     background-size: cover;
 }

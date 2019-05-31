@@ -69,6 +69,10 @@ ul>li>a {
     text-decoration: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 @media only screen and (max-width:$breakpoint-phone) {
     html {
         font-size: 14px;
