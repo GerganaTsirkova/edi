@@ -9,7 +9,7 @@
         align-items: center;
         justify-content: center;
         i {
-            color: $peach;
+            color: $yellow;
             align-self: center;
             margin-right: 0.5em;
         }
@@ -28,7 +28,7 @@
     display: flex;
     >a {
         margin-right: 18em;
-        color: $peach;
+        color: $yellow;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -60,7 +60,8 @@
         height: 100%;
         &:hover,
         &:focus {
-            background: $peach;
+            background: $yellow;
+            color: $base-dark;
         }
     }
 }

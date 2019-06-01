@@ -1,18 +1,13 @@
-.button {
+.btn {
     display: inline-block;
     border-radius: 0.3em;
-    background: #900;
-    color: #EEE;
+    background: $yellow;
+    color: $base-dark;
     padding: 0.5em 1em;
 }
 
-.button:hover {
-    background: #A00;
-    color: #FFF;
-}
-
-
-.button-primary {
-    font-size: 1.1em;
-    font-weight: bold;
+.btn:hover {
+    background: transparent;
+    color: white;
+    outline: 3px solid white;
 }
