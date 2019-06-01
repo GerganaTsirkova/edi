@@ -1,1 +1,1 @@
-Sitemap: https://github.com/GerganaTsirkova/mongroup/sitemap.xml
+Sitemap: https://gerganatsirkova.github.io/mongroup/sitemap.xml

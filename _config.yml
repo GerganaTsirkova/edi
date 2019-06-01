@@ -4,7 +4,7 @@ description: template
 destination: docs
 # baseurl: "/edi"
 # baseurl: ""
-url: "https://github.com/GerganaTsirkova/mongroup"
+url: "https://GerganaTsirkova.github.io/mongroup"
 twitter_username: GerganaTsirkova
 github_username: GerganaTsirkova
 exclude: [_assets, node_modules, Gemfile, Gemfile.lock, gulpfile.js, package.json, package-lock.json, README.md,docs]
