@@ -1,7 +1,7 @@
 .img-container-first-page {
     width: 100vw;
     height: 90vh;
-    background: url("{{ site.url }}/images/main1.jpg") center no-repeat;
+    background: url("../images/main1.jpg") center no-repeat;
     background-size: cover;
     display: grid;
     padding: 5em 10em;
@@ -39,15 +39,15 @@
     background: rgba($base-dark, 0.8);
     padding: 3em 2em;
     h2 {
-        margin-bottom: 1.5em;
+        padding-bottom: 1.5em;
         text-align: center;
         color: white;
     }
     p {
-        margin-bottom: 1em;
+        padding-bottom: 1em;
         color: white;
     }
     .btn {
-        margin-top: 1em;
+        padding-top: 1em;
     }
 }
