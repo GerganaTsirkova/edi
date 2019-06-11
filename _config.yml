@@ -1,9 +1,9 @@
-title: Template setup jekyll project
+title: ВиК услуги и ремонти гр.Русе - Монгруп
 email: g_cirkova@mail.bg
-description: template
+description: Водопроводни и канализационни услуги
 destination: docs
-baseurl: "https://gerganatsirkova.github.io/mongroup"
-# baseurl: ""
+# baseurl: "https://gerganatsirkova.github.io/mongroup"
+baseurl: ""
 url: ""
 twitter_username: GerganaTsirkova
 github_username: GerganaTsirkova
@@ -14,3 +14,4 @@ plugins:
 - jekyll-feed
 - jekyll-sitemap
 - github-pages
+- jekyll-seo-tag
