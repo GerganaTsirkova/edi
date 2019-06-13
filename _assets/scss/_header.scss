@@ -1,0 +1,38 @@
+header {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    overflow: hidden;
+    padding: 0.5m 2em;
+    >a.header-logo {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 3fr;
+        justify-content: center;
+        align-items: center;
+        span {
+            align-self: center;
+            font-family: 'Roboto Mono', monospace;
+            color: #017EE1;
+        }
+        img {
+            align-self: center;
+            width: 30%;
+            height: auto;
+        }
+    }
+    ul,
+    li,
+    nav {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    ul {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+    }
+    .header-contacts-phone {
+        display: flex;
+        flex-direction: column;
+    }
+}
