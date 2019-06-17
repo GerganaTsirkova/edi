@@ -1,18 +1,29 @@
-<a href="{{ site.baseurl }}/" class="header-logo">
-    <span>ВиК услуги</span>
-    <img src="{{ site.baseurl }}/images/logo.png" alt="logo mongroup">
-</a>
-<nav>
+<section class="site-header-top">
+    <a href="{{ site.baseurl }}/">
+        <section class="logo">
+            <section class="logo-img-container">
+                <img src="{{ site.baseurl }}/images/logo.png" alt="logo mongroup">
+            </section>
+            <section class="logo-text">
+                <h1>ВиК УСЛУГИ<span>МОН ГРУП</span></h1>
+                <span>гр. Русе</span>
+            </section>
+        </section>
+    </a>
+    <section class="call-us">
+        <section class="call-us-icon">
+            <i class="fas fa-mobile-alt"></i>
+        </section>
+        <section class="call-us-phones">
+            <p>Обадете се!</p>
+            <a href="tel:00359882597071">088 259 7071</a>
+            <a href="tel:00359882597071">088 259 7071</a>
+        </section>
+    </section>
+</section>
+<nav class="nav-mobile">
     {% include navigation.html %}
 </nav>
-<section class="header-contacts">
-    <h6>Обадете се!</h6>
-    <setction class="header-contacts-phone">
-        <i class="fas fa-phone-square-alt"></i>
-        <a href="tel:00359882597071">088 259 7071</a>
-    </setction>
-    <setction class="header-contacts-phone">
-        <i class="fas fa-phone-square-alt"></i>
-        <a href="tel:00359882597071">088 259 7071</a>
-    </setction>
-</section>
+<nav class="nav-wide">
+    {% include navigation.html %}
+</nav>
