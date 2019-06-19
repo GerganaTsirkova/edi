@@ -7,11 +7,12 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>ВиК услуги и ремонти гр.Русе - Мон груп</title>
 <link rel="stylesheet" href="/css/main.css">
-<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"> -->
+<script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
 <link rel="shortcut icon" type="image/png" href="/images/logo.png">
 <link href="https://fonts.googleapis.com/css?family=Anton|Roboto+Mono&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
-<script src="https://kit.fontawesome.com/3c3f4369a3.js"></script> <!-- Begin Jekyll SEO tag v2.5.0 -->
+<script src="https://kit.fontawesome.com/3c3f4369a3.js"></script>
+<script type="text/javascript" src="/site.js"></script> <!-- Begin Jekyll SEO tag v2.5.0 -->
 <meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="ВиК услуги и ремонти гр.Русе - Мон груп" />
 <meta property="og:locale" content="en_US" />
@@ -42,7 +43,7 @@
     </a>
     <section class="call-us">
         <section class="call-us-icon">
-            <i class="fas fa-mobile-alt"></i>
+            <i class="fas fa-phone-alt"></i>
         </section>
         <section class="call-us-phones">
             <p>Обадете се!</p>
@@ -51,43 +52,55 @@
         </section>
     </section>
 </section>
-<nav class="nav-mobile">
+<nav class="desktop-nav">
     <ul>
-    <li><a href="/">НАЧАЛО</a></li>
+    <li><a href="/" class="first">НАЧАЛО</a></li>
     <li><a href="/about/">ЗА НАС</a></li>
     <li><a href="/posts/">СТАТИИ</a></li>
-    <li><a href="/contacts/">КОНТАКТИ</a></li>
+    <li><a href="/contacts/" class="last">КОНТАКТИ</a></li>
 </ul>
 </nav>
-<nav class="nav-wide">
-    <ul>
-    <li><a href="/">НАЧАЛО</a></li>
+<nav class="mobile-nav">
+    <div class="container">
+        <input id="responsive-menu" type="checkbox">
+        <label for="responsive-menu">МЕНЮ<span id="menu-icon"></span></label>
+        <div id="overlay"></div>
+        <ul>
+    <li><a href="/" class="first">НАЧАЛО</a></li>
     <li><a href="/about/">ЗА НАС</a></li>
     <li><a href="/posts/">СТАТИИ</a></li>
-    <li><a href="/contacts/">КОНТАКТИ</a></li>
+    <li><a href="/contacts/" class="last">КОНТАКТИ</a></li>
 </ul>
+    </div>
 </nav>
     </header>
-    <aside>
-        <ul>
-    <li>Поставяне на вана</li>
-    <li>Поставяне на вана</li>
-    <li>Поставяне на вана</li>
-    <li>Поставяне на вана</li>
-    <li>Поставяне на вана</li>
-    <li>Поставяне на вана</li>
-    <li>Поставяне на вана</li>
-    <li>Поставяне на вана</li>
-    <li>Поставяне на вана</li>
-</ul>
-    </aside>
     <main class="site-content">
         
 
+        <a class="btn-up" id="return-to-top" onclick="topFunction()"><i class="fas fa-arrow-up"></i></a>
     </main>
     <footer class="site-footer">
-        <p>This is my footer</p>
+        <p>Общи условия</p>
+<p>Политика за поверителност</p>
+<ul class="external-links">
+    <li>
+        <a href="https://www.freepik.com/free-photos-vectors/water">Water photo created by freepik - www.freepik.com</a>
+    </li>
+    <li>
+        <a href="https://www.freepik.com/free-photos-vectors/background">Background photo created by freepik - www.freepik.com</a>
+    </li>
+    <li>
+        <a href="https://www.freepik.com/free-photos-vectors/water">Water photo created by freepik - www.freepik.com</a>
+    </li>
+    <li>
+        <a href="https://www.freepik.com/free-photos-vectors/water">Water photo created by freepik - www.freepik.com</a>
+    </li>
+</ul>
+<p class="creator">&copy;2019 All rights reserved</p>
     </footer>
+    <script>
+        start();
+    </script>
 </body>
 
 </html>

@@ -9,15 +9,16 @@
     <header class="site-header">
         {% include header-page.html %}
     </header>
-    <aside>
-        {% include aside.html %}
-    </aside>
     <main class="site-content">
         {{ content }}
+        <a class="btn-up" id="return-to-top" onclick="topFunction()"><i class="fas fa-arrow-up"></i></a>
     </main>
     <footer class="site-footer">
         {% include footer.html %}
     </footer>
+    <script>
+        start();
+    </script>
 </body>
 
 </html>

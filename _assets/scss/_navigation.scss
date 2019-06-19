@@ -1,0 +1,152 @@
+nav.mobile-nav {
+    background: $base-light;
+    color: $font;
+    left: 0;
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    .container {
+        margin: 0 auto;
+        max-width: 80em;
+        input {
+            opacity: 0;
+            position: absolute;
+            z-index: -1;
+        }
+        label {
+            color: $font;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1.5em;
+            padding: 0.2em 0.5em;
+        }
+        /* Hamburger Icon */
+        #menu-icon,
+        #menu-icon:before,
+        #menu-icon:after {
+            background: $font;
+            border-radius: 0.05em;
+            height: 0.2em;
+            transition: all 0.2s ease-in-out;
+            width: 100%;
+        }
+        #menu-icon {
+            display: inline-block;
+            margin: 0.4em 0;
+            max-width: 1em;
+            position: relative;
+        }
+        label #menu-icon {
+            float: right;
+        }
+        #menu-icon:before,
+        #menu-icon:after {
+            content: '';
+            left: 0;
+            position: absolute;
+        }
+        #menu-icon:before {
+            top: -0.4em;
+        }
+        #menu-icon:after {
+            bottom: -0.4em;
+        }
+        /* Close Icon */
+        input[type=checkbox]:checked+label #menu-icon {
+            background: transparent;
+        }
+        input[type=checkbox]:checked+label #menu-icon:before {
+            top: 0;
+            transform: rotate(-45deg);
+        }
+        input[type=checkbox]:checked+label #menu-icon:after {
+            bottom: 0;
+            transform: rotate(45deg);
+        }
+        /*** MENU ***/
+        /* Overlay */
+        input:checked~#overlay {
+            background: $base-light;
+            left: 0;
+            height: auto;
+            position: fixed;
+            right: 0;
+            width: 100vw;
+            z-index: -1;
+        }
+        /* List */
+        ul {
+            color: $font;
+            font-size: 1.2em;
+            list-style: none;
+            margin: 0;
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+            padding: 0;
+            text-align: center;
+        }
+        input:checked~ul {
+            margin: 1em;
+            max-height: inherit;
+            opacity: 1;
+        }
+        ul>li {
+            margin: 0.5em 0;
+        }
+        ul a {
+            color: $font;
+            text-decoration: none;
+        }
+        ul a:hover {
+            text-decoration: underline;
+        }
+    }
+    @media screen and(max-width: $breakpoint-phone) {
+        display: block;
+    }
+    @media screen and(min-width: $breakpoint-phone) {
+        display: none;
+    }
+}
+
+nav.desktop-nav {
+    font: inherit;
+    >ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $font;
+        background: $base-dark;
+        width: fit-content;
+        margin: 0 auto;
+        border-bottom-left-radius: 1em;
+        border-bottom-right-radius: 1em;
+        overflow: hidden;
+        a {
+            display: block;
+            color: white;
+            padding: 1.5em 2em;
+            transition: 0.4s;
+            &:hover {
+                color: $font;
+                background: $base-light;
+            }
+        }
+        .first {
+            border-bottom-left-radius: 1em;
+        }
+        .last {
+            border-bottom-right-radius: 1em;
+        }
+    }
+    @media screen and(max-width: $breakpoint-phone) {
+        display: none;
+    }
+    @media screen and(min-width: $breakpoint-phone) {
+        display: block;
+    }
+}

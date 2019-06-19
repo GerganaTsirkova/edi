@@ -12,7 +12,7 @@
     </a>
     <section class="call-us">
         <section class="call-us-icon">
-            <i class="fas fa-mobile-alt"></i>
+            <i class="fas fa-phone-alt"></i>
         </section>
         <section class="call-us-phones">
             <p>Обадете се!</p>
@@ -21,9 +21,14 @@
         </section>
     </section>
 </section>
-<nav class="nav-mobile">
+<nav class="desktop-nav">
     {% include navigation.html %}
 </nav>
-<nav class="nav-wide">
-    {% include navigation.html %}
+<nav class="mobile-nav">
+    <div class="container">
+        <input id="responsive-menu" type="checkbox">
+        <label for="responsive-menu">МЕНЮ<span id="menu-icon"></span></label>
+        <div id="overlay"></div>
+        {% include navigation.html %}
+    </div>
 </nav>

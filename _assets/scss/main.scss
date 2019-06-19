@@ -5,7 +5,10 @@
 @import 'header';
 @import 'main-page';
 @import 'aside';
+@import 'navigation';
+@import 'first-page';
 body {
     width: 100vw;
     background: white;
+    color: $base-dark;
 }
