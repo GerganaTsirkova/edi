@@ -11,4 +11,11 @@ function start() {
             $('#return-to-top').css('display', 'none');
         }
     }
+
+
+}
+
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
 }

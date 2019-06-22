@@ -2,14 +2,9 @@ body {
     display: flex;
     flex-direction: column;
     header,
-    footer {
-        width: 100%;
-    }
-    aside {
-        width: 30vw;
-    }
+    footer,
     main {
-        width: 70vw;
+        width: 100%;
     }
 }
 
