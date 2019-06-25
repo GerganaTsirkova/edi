@@ -76,29 +76,37 @@
         h6 {
             padding: 0.5em 1em;
             color: white;
-            background: $base-dark;
+            background: $base-light;
         }
         li {
-            // background: linear-gradient(to bottom, #ffffff, #f2f2f2, #e6e6e6, #cccccc, #cccccc, #cccccc);
-            border-bottom: 1px dotted #cccccc;
+            border-bottom: 1px dotted $base-light;
             &:last-of-type {
                 border-bottom: none;
             }
             a {
                 display: flex;
+                widows: 100%;
+                height: 100%;
                 padding: 0.5em 1em;
                 span {
                     margin-bottom: 2px;
                 }
-                &:hover {
-                    text-decoration: underline;
+                p {
+                    display: block;
                 }
-            }
-            i {
-                align-self: baseline;
-                color: $base-dark;
-                margin-right: 0.5em;
-                margin-top: 0.2em;
+                i {
+                    align-self: baseline;
+                    color: $base-light;
+                    margin-right: 0.5em;
+                    margin-top: 0.2em;
+                }
+                &:hover {
+                    color: white;
+                    background: $base-light;
+                    i {
+                        color: white;
+                    }
+                }
             }
         }
         @media screen and(min-width: $breakpoint-phone) {
@@ -114,5 +122,32 @@
     }
     @media screen and(min-width: $breakpoint-phone) and(max-width: $breakpoint-tablet) {
         padding: 3em;
+    }
+}
+
+.first-page-text {
+    background: $yellow;
+    color: white;
+    padding: 5em 15em;
+    .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        h5 {
+            letter-spacing: 2px;
+        }
+        hr {
+            border-top: 1px solid white;
+            border-bottom: 1px solid white;
+            font-size: 3em;
+            width: 7%;
+            margin-bottom: 0.7em;
+        }
+        .btn {
+            margin-top: 3em;
+            font-size: 1em;
+        }
     }
 }
