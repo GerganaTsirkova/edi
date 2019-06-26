@@ -7,17 +7,3 @@ body {
         width: 100%;
     }
 }
-
-.btn-up {
-    position: fixed;
-    bottom: 0;
-    right: 3%;
-    font-size: 2em;
-    background: $base-dark;
-    border-radius: 0.5em;
-    padding: 0.1em 0.4em;
-    color: white;
-    &:hover {
-        background: $red;
-    }
-}

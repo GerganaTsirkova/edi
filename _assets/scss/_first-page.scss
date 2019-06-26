@@ -1,6 +1,6 @@
 .top-first-page {
     width: 100%;
-    padding: 6em 7em;
+    padding: 4em 7em;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
@@ -53,6 +53,7 @@
                 margin-top: 0;
             }
             img {
+                order: 1;
                 margin: 0 auto;
                 position: absolute;
                 width: auto;
@@ -70,16 +71,16 @@
     ul {
         flex-basis: 100%;
         order: 2;
-        box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.5);
-        border-radius: 0.5em;
+        box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.3);
+        border-radius: 1em;
         overflow: hidden;
         h6 {
             padding: 0.5em 1em;
             color: white;
-            background: $base-light;
+            background: $yellow;
         }
         li {
-            border-bottom: 1px dotted $base-light;
+            border-bottom: 1px dotted $yellow;
             &:last-of-type {
                 border-bottom: none;
             }
@@ -88,6 +89,7 @@
                 widows: 100%;
                 height: 100%;
                 padding: 0.5em 1em;
+                color: $font;
                 span {
                     margin-bottom: 2px;
                 }
@@ -96,15 +98,14 @@
                 }
                 i {
                     align-self: baseline;
-                    color: $base-light;
+                    color: $yellow;
                     margin-right: 0.5em;
                     margin-top: 0.2em;
                 }
                 &:hover {
-                    color: white;
-                    background: $base-light;
+                    background: rgba($yellow, 0.5);
                     i {
-                        color: white;
+                        color: $yellow;
                     }
                 }
             }
@@ -126,9 +127,10 @@
 }
 
 .first-page-text {
-    background: $yellow;
+    background: $base-light;
     color: white;
-    padding: 5em 15em;
+    padding: 5em 5em;
+    margin-top: 3em;
     .text {
         display: flex;
         flex-direction: column;
@@ -142,12 +144,23 @@
             border-top: 1px solid white;
             border-bottom: 1px solid white;
             font-size: 3em;
-            width: 7%;
+            width: 20%;
             margin-bottom: 0.7em;
+            @media screen and(min-width: $breakpoint-phone) {
+                width: 7%;
+            }
         }
-        .btn {
+        .btn-single {
             margin-top: 3em;
             font-size: 1em;
         }
+    }
+    @media screen and(min-width: $breakpoint-phone) and(max-width: $breakpoint-tablet) {
+        margin-top: 3em;
+        padding: 5em 10em;
+    }
+    @media screen and(min-width: $breakpoint-tablet) {
+        margin-top: 3em;
+        padding: 5em 12em;
     }
 }

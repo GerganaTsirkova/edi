@@ -1,15 +1,33 @@
-.btn {
-    background: white;
+.btn-single {
+    background: #2B324A;
+    color: white;
     display: inline-block;
     padding: 1em 2em;
     border: none;
     outline: none;
-    color: $base-dark;
     cursor: pointer;
-    border-radius: 0.2rem;
+    border-radius: 0.8em;
+    box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.3);
+    &:hover {
+        color: $base-dark;
+        background: white;
+    }
+    @media screen and(max-width: $breakpoint-phone) {
+        padding: 1em 2em;
+    }
 }
 
-.btn:hover {
+.btn-up {
+    position: fixed;
+    bottom: 1%;
+    right: 1%;
+    font-size: 2em;
+    background: #1c2130;
+    border-radius: 0.5em;
+    padding: 0.1em 0.4em;
     color: white;
-    background: $base-dark;
+    box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.3);
+    &:hover {
+        background: $red;
+    }
 }
