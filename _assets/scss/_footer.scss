@@ -1,20 +1,21 @@
 .site-footer {
+    overflow: hidden;
     .footer-content {
         height: fit-content;
         background: $base-dark;
         color: $font-extra-light;
         display: flex;
         flex-direction: column;
-        padding: 2em 3em;
+        padding: 2em 3em 1em 3em;
         ul,
         li,
         a {
             color: $font-extra-light;
         }
-        >section .link-header {
+        .link-header {
             margin: 1em 0;
             font-weight: bold;
-            color: whitesmoke;
+            color: $font-extra-light;
         }
         .contacts {
             margin-bottom: 1em;
@@ -30,17 +31,39 @@
             margin-bottom: 1em;
             li {
                 margin-bottom: 0.5em;
+                a {
+                    outline: none;
+                    cursor: pointer;
+                    &:hover,
+                    &:focus {
+                        color: white;
+                    }
+                }
             }
         }
         .policy {
-            >section {
+            .policies {
                 display: flex;
                 flex-direction: column;
+                a {
+                    outline: none;
+                    cursor: pointer;
+                    &:hover,
+                    &:focus {
+                        color: white;
+                    }
+                }
             }
             .links {
                 margin-bottom: 1em;
                 a {
+                    outline: none;
+                    cursor: pointer;
                     font-size: 0.8em;
+                    &:hover,
+                    &:focus {
+                        color: white;
+                    }
                 }
             }
         }
@@ -55,12 +78,11 @@
             .footer-nav {
                 margin-right: 1em;
             }
-            .policy {}
         }
         @media screen and(min-width:$breakpoint-tablet) {
             flex-direction: row;
             justify-content: space-between;
-            padding: 3em 6em;
+            padding: 3em 6em 1.5em 6em;
             .footer-nav {
                 margin-right: 2em;
             }
@@ -69,43 +91,23 @@
             }
         }
     }
-    >.footer-bottom {
-        font: inherit;
+    >.bottom {
         background: $base-dark;
-        color: white;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding-top: 2em;
+        padding: 1em 3em 0.5em 3em;
+        background: $dark;
+        border: 4px solid $dark;
+        font-size: 0.8em;
         >p {
             margin: 0 2em;
             text-align: center;
-        }
-        a {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 1em 2em;
-            img {
-                width: 30%;
-                height: auto;
-            }
+            color: $font-light;
         }
         @media screen and(min-width:$breakpoint-phone) and(max-width: $breakpoint-laptop) {
-            a img {
-                width: 15%;
-                height: auto;
-            }
             >p {
                 margin: 0 4em;
             }
         }
         @media screen and(min-width:$breakpoint-tablet) {
-            a img {
-                width: 10%;
-                height: auto;
-            }
             >p {
                 margin: 0 8em;
             }

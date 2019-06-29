@@ -130,7 +130,8 @@ nav.desktop-nav {
             color: white;
             padding: 1.5em 2em;
             transition: 0.4s;
-            &:hover {
+            &:hover,
+            &:focus {
                 color: white;
                 background: $base-light;
             }

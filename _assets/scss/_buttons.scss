@@ -8,7 +8,13 @@
     cursor: pointer;
     border-radius: 0.8em;
     box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.3);
-    &:hover {
+    -webkit-transition: background-color 0.2s ease-out;
+    -moz-transition: background-color 0.2s ease-out;
+    -o-transition: background-color 0.2s ease-out;
+    -ms-transition: background-color 0.2s ease-out;
+    transition: background-color 0.2s ease-out;
+    &:hover,
+    &:focus {
         color: $base-dark;
         background: white;
     }
@@ -19,15 +25,21 @@
 
 .btn-up {
     position: fixed;
-    bottom: 1%;
-    right: 1%;
+    bottom: 2%;
+    right: 2%;
     font-size: 2em;
     background: #1c2130;
     border-radius: 0.5em;
     padding: 0.1em 0.4em;
     color: white;
-    box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.3);
-    &:hover {
+    box-shadow: 0 0 0.2rem 0 rgba(0, 0, 0, 0.3);
+    -webkit-transition: background-color 0.2s ease-out;
+    -moz-transition: background-color 0.2s ease-out;
+    -o-transition: background-color 0.2s ease-out;
+    -ms-transition: background-color 0.2s ease-out;
+    transition: background-color 0.2s ease-out;
+    &:hover,
+    &:focus {
         background: $red;
     }
 }

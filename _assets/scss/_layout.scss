@@ -1,4 +1,7 @@
 body {
+    width: 100vw;
+    background: white;
+    color: $base-dark;
     display: flex;
     flex-direction: column;
     header,

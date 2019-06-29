@@ -3,12 +3,10 @@
 @import 'buttons';
 @import 'layout';
 @import 'header';
-@import 'main-page';
 @import 'navigation';
 @import 'first-page';
 @import 'footer';
-body {
-    width: 100vw;
-    background: white;
-    color: $base-dark;
-}
+@import '404';
+@import 'contacts';
+@import 'policy';
+@import 'about';
