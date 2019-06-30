@@ -479,7 +479,8 @@ nav.desktop-nav {
       padding: 3em; } }
 
 .first-page-text .text {
-  background: linear-gradient(rgba(43, 50, 74, 0.7), rgba(130, 152, 225, 0.8)), url("./images/water-drop.jpg") center center no-repeat;
+  z-index: 1;
+  background: linear-gradient(rgba(43, 50, 74, 0.7), rgba(130, 152, 225, 0.8)), url("../images/water-drop.jpg") center center no-repeat;
   background-size: cover;
   width: 100%;
   color: white;
