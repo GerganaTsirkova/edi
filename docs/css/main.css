@@ -1,3 +1,21 @@
+.no-js #loader {
+  display: none; }
+
+.js #loader {
+  display: block;
+  position: absolute;
+  left: 100px;
+  top: 0; }
+
+.se-pre-con {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url("../images/preloader.gif") center no-repeat white; }
+
 * {
   padding: 0;
   margin: 0; }
@@ -116,6 +134,14 @@ body {
   body footer,
   body main {
     width: 100%; }
+  body .hr-purple {
+    width: 20%;
+    margin-bottom: 1.5em;
+    color: #8298E1;
+    font-weight: 0.1px;
+    border-bottom: 2px solid #8298E1;
+    border-top: 2px solid #8298E1;
+    border-radius: 0.5rem; }
 
 .site-header-top {
   padding: 1em 7em;
@@ -438,9 +464,10 @@ nav.desktop-nav {
     .top-first-page .list h6 {
       padding: 0.5em 1em;
       color: white;
-      background: #FACD3D; }
+      border-bottom: 1px dotted #8298E1;
+      background: #8298E1; }
     .top-first-page .list .item {
-      border-bottom: 1px dotted #FACD3D; }
+      border-bottom: 1px dotted #8298E1; }
       .top-first-page .list .item:last-of-type {
         border-bottom: none; }
       .top-first-page .list .item a {
@@ -450,20 +477,21 @@ nav.desktop-nav {
         padding: 0.5em 1em;
         color: #2B324A;
         cursor: pointer;
-        outline: none; }
+        outline: none;
+        transition: background-color 0.2s ease-out; }
         .top-first-page .list .item a span {
           margin-bottom: 2px; }
         .top-first-page .list .item a p {
           display: block; }
         .top-first-page .list .item a i {
           align-self: baseline;
-          color: #FACD3D;
+          color: #8298E1;
           margin-right: 0.5em;
           margin-top: 0.2em; }
         .top-first-page .list .item a:hover {
-          background: rgba(250, 205, 61, 0.5); }
+          background: rgba(130, 152, 225, 0.5); }
           .top-first-page .list .item a:hover i {
-            color: #FACD3D; }
+            color: #2B324A; }
     @media screen and (min-width: 700px) {
       .top-first-page .list {
         order: 1;
@@ -631,7 +659,7 @@ nav.desktop-nav {
   display: flex;
   flex-direction: column;
   margin: 2em 0; }
-  .middlle-section > p:first-of-type {
+  .middlle-section > p {
     text-align: center;
     padding: 0 3em; }
   .middlle-section .form-container {
@@ -809,3 +837,70 @@ hr {
   .general-items > p {
     text-indent: 5%;
     margin-bottom: 1em; }
+
+.about-us-top {
+  display: flex;
+  flex-direction: column;
+  margin: 2em;
+  overflow: hidden; }
+  .about-us-top .about-us-text h2 {
+    text-align: center;
+    font-size: 1.7em; }
+  .about-us-top .about-us-text > hr {
+    width: 20%;
+    margin-bottom: 1.5em;
+    color: #8298E1; }
+  .about-us-top .about-us-top-img .about-us-img-container {
+    box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.5);
+    position: relative;
+    border: 4px solid #2B324A;
+    margin: 2em 0 0.5em 0;
+    overflow: hidden; }
+    .about-us-top .about-us-top-img .about-us-img-container::after {
+      display: block;
+      content: '';
+      padding-top: 56.25%; }
+    .about-us-top .about-us-top-img .about-us-img-container img {
+      width: 100%;
+      height: auto;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0; }
+  .about-us-top .about-us-top-img .attribution a {
+    font-size: 0.4em;
+    position: absolute; }
+  @media screen and (min-width: 900px) {
+    .about-us-top {
+      flex-direction: row;
+      align-items: center;
+      margin: 2em 4em; }
+      .about-us-top .about-us-text {
+        width: 40%; }
+      .about-us-top .about-us-top-img {
+        width: 55%;
+        margin-left: auto; } }
+
+.about-us-middle {
+  margin: 2em;
+  display: flex; }
+  .about-us-middle .our-advantages {
+    margin-right: 2em;
+    width: 30%; }
+    .about-us-middle .our-advantages h3 {
+      margin-bottom: 1em; }
+    .about-us-middle .our-advantages li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1em; }
+      .about-us-middle .our-advantages li div {
+        padding: 0.2em 0.7em;
+        background: linear-gradient(rgba(125, 145, 211, 0.7), rgba(43, 50, 74, 0.7));
+        box-shadow: 0 0 0.3rem 0 rgba(0, 0, 0, 0.7);
+        font-size: 2em;
+        color: white;
+        border-radius: 0.5em;
+        margin-right: 0.3em; }
+  @media screen and (min-width: 700px) {
+    .about-us-middle {
+      margin: 3em 4em; } }

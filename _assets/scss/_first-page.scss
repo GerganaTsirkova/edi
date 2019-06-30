@@ -77,10 +77,11 @@
         h6 {
             padding: 0.5em 1em;
             color: white;
-            background: $yellow;
+            border-bottom: 1px dotted $base-light;
+            background: $base-light;
         }
         .item {
-            border-bottom: 1px dotted $yellow;
+            border-bottom: 1px dotted $base-light;
             &:last-of-type {
                 border-bottom: none;
             }
@@ -92,6 +93,11 @@
                 color: $font;
                 cursor: pointer;
                 outline: none;
+                -webkit-transition: background-color 0.2s ease-out;
+                -moz-transition: background-color 0.2s ease-out;
+                -o-transition: background-color 0.2s ease-out;
+                -ms-transition: background-color 0.2s ease-out;
+                transition: background-color 0.2s ease-out;
                 span {
                     margin-bottom: 2px;
                 }
@@ -100,14 +106,14 @@
                 }
                 i {
                     align-self: baseline;
-                    color: $yellow;
+                    color: $base-light;
                     margin-right: 0.5em;
                     margin-top: 0.2em;
                 }
                 &:hover {
-                    background: rgba($yellow, 0.5);
+                    background: rgba($base-light, 0.5);
                     i {
-                        color: $yellow;
+                        color: $base-dark;
                     }
                 }
             }

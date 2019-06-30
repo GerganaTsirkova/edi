@@ -1,0 +1,84 @@
+.about-us-top {
+    display: flex;
+    flex-direction: column;
+    margin: 2em;
+    overflow: hidden;
+    .about-us-text {
+        h2 {
+            text-align: center;
+            font-size: 1.7em;
+        }
+        >hr {
+            width: 20%;
+            margin-bottom: 1.5em;
+            color: $base-light;
+        }
+    }
+    .about-us-top-img {
+        .about-us-img-container {
+            box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.5);
+            position: relative;
+            border: 4px solid $base-dark;
+            margin: 2em 0 0.5em 0;
+            overflow: hidden;
+            &::after {
+                display: block;
+                content: '';
+                padding-top: 56.25%;
+            }
+            img {
+                width: 100%;
+                height: auto;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+            }
+        }
+        .attribution a {
+            font-size: 0.4em;
+            position: absolute;
+        }
+    }
+    @media screen and(min-width:900px) {
+        flex-direction: row;
+        align-items: center;
+        margin: 2em 4em;
+        .about-us-text {
+            width: 40%
+        }
+        .about-us-top-img {
+            width: 55%;
+            margin-left: auto;
+        }
+    }
+}
+
+.about-us-middle {
+    margin: 2em;
+    display: flex;
+    .our-advantages {
+        margin-right: 2em;
+        width: 30%;
+        h3 {
+            margin-bottom: 1em;
+        }
+        li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1em;
+            div {
+                padding: 0.2em 0.7em;
+                background: linear-gradient(rgba(125, 145, 211, 0.7), rgba(43, 50, 74, 0.7));
+                box-shadow: 0 0 0.3rem 0 rgba(0, 0, 0, 0.7);
+                font-size: 2em;
+                color: white;
+                border-radius: 0.5em;
+                margin-right: 0.3em;
+            }
+        }
+    }
+    @media screen and(min-width: $breakpoint-phone) {
+        margin: 3em 4em;
+    }
+}

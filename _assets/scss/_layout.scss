@@ -9,4 +9,13 @@ body {
     main {
         width: 100%;
     }
+    .hr-purple {
+        width: 20%;
+        margin-bottom: 1.5em;
+        color: $base-light;
+        font-weight: 0.1px;
+        border-bottom: 2px solid $base-light;
+        border-top: 2px solid $base-light;
+        border-radius: 0.5rem;
+    }
 }
