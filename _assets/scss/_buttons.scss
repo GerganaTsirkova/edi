@@ -6,7 +6,6 @@
     border: none;
     outline: none;
     cursor: pointer;
-    border-radius: 0.8em;
     box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.3);
     -webkit-transition: background-color 0.2s ease-out;
     -moz-transition: background-color 0.2s ease-out;
@@ -29,7 +28,7 @@
     right: 2%;
     font-size: 2em;
     background: #1c2130;
-    border-radius: 0.5em;
+    text-shadow: 0 2px #1c2130;
     padding: 0.1em 0.4em;
     color: white;
     box-shadow: 0 0 0.2rem 0 rgba(0, 0, 0, 0.3);

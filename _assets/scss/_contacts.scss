@@ -5,6 +5,9 @@
     >p {
         text-align: center;
         padding: 0 3em;
+        &:last-of-type {
+            margin-bottom: 1em;
+        }
     }
     .form-container {
         display: flex;
@@ -68,7 +71,6 @@
                     border: none;
                     outline: none;
                     cursor: pointer;
-                    border-radius: 0.8em;
                     box-shadow: 0 0 0.2rem 0 rgba(0, 0, 0, 0.5);
                     -webkit-transition: background-color 0.2s ease-out;
                     -moz-transition: background-color 0.2s ease-out;
@@ -92,7 +94,6 @@
             margin: 2em 0 0 0;
             align-self: center;
             box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.5);
-            border: 4px solid $base-dark;
             &::after {
                 display: block;
                 content: '';
@@ -121,13 +122,14 @@
         }
     }
     @media screen and(min-width:850px) {
-        margin: 2em 3em;
+        margin: 4em 3em;
     }
 }
 
-hr {
+.hr-purple {
     width: 10%;
     margin: 2em auto 0 auto;
+    font-size: 0.1px !important;
     border-top: 2px solid $base-light;
     border-bottom: 2px solid $base-light;
 }

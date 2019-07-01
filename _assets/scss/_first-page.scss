@@ -15,6 +15,7 @@
         flex-direction: column;
         p {
             width: 100%;
+            text-shadow: 0 2px white;
         }
         .img-contianer {
             position: relative;
@@ -72,13 +73,14 @@
         flex-basis: 100%;
         order: 2;
         box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.3);
-        border-radius: 1em;
+        // border-radius: 1em;
         overflow: hidden;
         h6 {
             padding: 0.5em 1em;
             color: white;
             border-bottom: 1px dotted $base-light;
             background: $base-light;
+            text-shadow: 0 2px $base-light;
         }
         .item {
             border-bottom: 1px dotted $base-light;
