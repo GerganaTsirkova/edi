@@ -5,7 +5,6 @@ destination: docs
 baseurl: "/mongroup"
 # baseurl: ""
 url: ""
-twitter_username: GerganaTsirkova
 github_username: GerganaTsirkova
 exclude: [_assets, node_modules, Gemfile, Gemfile.lock, gulpfile.js, package.json, package-lock.json, README.md,docs]
 # Build settings
