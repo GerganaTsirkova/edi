@@ -1063,9 +1063,13 @@ nav.desktop-nav {
     box-shadow: 0 0 0.3rem 0 rgba(0, 0, 0, 0.7);
     border-radius: 50%;
     display: block;
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     align-self: center; }
+    @media screen and (min-width: 700px) {
+      .testimonial img {
+        width: 150px;
+        height: 150px; } }
   .testimonial cite {
     color: gray;
     display: block;
