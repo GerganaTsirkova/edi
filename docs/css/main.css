@@ -269,7 +269,7 @@ nav.mobile-nav {
   position: relative;
   top: 0;
   width: 100%;
-  z-index: 9999; }
+  z-index: 1000; }
   nav.mobile-nav .container {
     margin: 0 auto;
     max-width: 80em;
