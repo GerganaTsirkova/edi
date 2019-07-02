@@ -875,7 +875,11 @@ nav.desktop-nav {
           position: absolute;
           top: 0;
           left: 0;
-          right: 0; }
+          right: 0;
+          transition: all .2s ease-in-out; }
+          .our-team .members .member .member-img-container img:hover, .our-team .members .member .member-img-container img:focus {
+            -webkit-transform: scale(1.1);
+                    transform: scale(1.1); }
       .our-team .members .member h6,
       .our-team .members .member > p {
         text-align: center;
