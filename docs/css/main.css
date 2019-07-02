@@ -1056,7 +1056,8 @@ nav.desktop-nav {
       text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
       background: #8298E1;
       margin-left: auto;
-      line-height: 1.6; }
+      line-height: 1.6;
+      transition: background-color 0.2s ease-out; }
       .middlle-section .form-elements .button-success:hover {
         background: #2B324A; }
     @media screen and (min-width: 700px) and (max-width: 1040px) {
