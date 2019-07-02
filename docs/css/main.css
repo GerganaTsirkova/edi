@@ -1074,3 +1074,9 @@ nav.desktop-nav {
 
 .honeypot-field {
   display: none; }
+
+.thankyou_message {
+  margin-top: 1em 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center; }

@@ -1,1 +1,1 @@
-Sitemap: /mongroup/sitemap.xml
+Sitemap: /sitemap.xml
