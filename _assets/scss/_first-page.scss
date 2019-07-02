@@ -73,7 +73,6 @@
         flex-basis: 100%;
         order: 2;
         box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.3);
-        // border-radius: 1em;
         overflow: hidden;
         h6 {
             padding: 0.5em 1em;
@@ -93,7 +92,6 @@
                 height: 100%;
                 padding: 0.5em 1em;
                 color: $font;
-                cursor: pointer;
                 outline: none;
                 -webkit-transition: background-color 0.2s ease-out;
                 -moz-transition: background-color 0.2s ease-out;
@@ -112,10 +110,34 @@
                     margin-right: 0.5em;
                     margin-top: 0.2em;
                 }
-                &:hover {
+                &:hover,
+                &:focus {
                     background: rgba($base-light, 0.5);
                     i {
                         color: $base-dark;
+                    }
+                }
+            }
+            a.more {
+                display: flex;
+                cursor: pointer;
+                >p:last-of-type {
+                    text-align: center;
+                    line-height: 1.5;
+                    background: $base-light;
+                    color: white;
+                    border-radius: 0.1em;
+                    margin-left: auto;
+                    padding: 0.3em 0.5em;
+                    >i {
+                        color: white;
+                        margin-left: 0.2em;
+                    }
+                }
+                &:hover,
+                &:focus {
+                    >p:last-of-type {
+                        background: $base-dark;
                     }
                 }
             }

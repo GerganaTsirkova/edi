@@ -60,6 +60,8 @@
             .links {
                 margin-bottom: 1em;
                 text-shadow: 0 2px $base-dark;
+                display: flex;
+                flex-direction: column;
                 a {
                     outline: none;
                     cursor: pointer;
