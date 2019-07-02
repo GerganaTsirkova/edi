@@ -120,10 +120,9 @@ nav.desktop-nav {
         align-items: center;
         color: $font;
         background: $base-dark;
+        text-shadow: 0 1px #1c2130;
         width: fit-content;
         margin: 0 auto;
-        // border-bottom-left-radius: 1em;
-        // border-bottom-right-radius: 1em;
         overflow: hidden;
         a {
             display: block;
@@ -136,12 +135,6 @@ nav.desktop-nav {
                 background: $base-light;
             }
         }
-        // .first {
-        //     border-bottom-left-radius: 1em;
-        // }
-        // .last {
-        //     border-bottom-right-radius: 1em;
-        // }
     }
     @media screen and(max-width: $breakpoint-phone) {
         display: none;

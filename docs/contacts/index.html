@@ -12,7 +12,10 @@
 <link href="https://fonts.googleapis.com/css?family=Anton|Roboto+Mono&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/3c3f4369a3.js"></script>
-<script type="text/javascript" src="/mongroup/site.js"></script> <!-- Begin Jekyll SEO tag v2.5.0 -->
+<script type="text/javascript" src="/mongroup/site.js"></script>
+<script type="text/javascript" src="/mongroup/google-apps-script.js"></script>
+<script type="text/javascript" src="/mongroup/form-submission-handler.js"></script>
+<form class="gform pure-form pure-form-stacked" method="POST" data-email="mon.group@mail.bg" action="https://script.google.com/macros/s/AKfycbznbZJ8MuG4PU5tHI-d75_pG9jEup2_w_rB0tdT/exec"> <!-- Begin Jekyll SEO tag v2.5.0 -->
 <meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="contacts" />
 <meta property="og:locale" content="en_US" />
@@ -28,7 +31,6 @@
 </head>
 
 <body>
-    <!-- <div class="se-pre-con"></div> -->
     <header class="site-header">
         <section class="site-header-top">
     <a href="/mongroup/">
@@ -78,34 +80,42 @@
     <main class="site-content">
         <section class="contacts">
     <section class="middlle-section">
-        <p>Вашите малки и незначителни ВиК проблеми могат да станат сериозни много бързо, така че не се колебайте, а се свържете на посочените телефони възможно най-скоро! Екипът на "Мон груп" реагира бързо и прецизно на спешни ВиК нужди от ваша страна.</p>
-        <p>Имате въпрос към нас? Или просто желаете да направите запитване? Може да използвате формата за запитване, а ние от Мон груп ще ви отговорим възможно най-скоро.</p>
-        <section class="form-container">
-            <form method="POST" action="#">
-                <h5>Свържете се с нас!</h5>
-                <fieldset>
-                    <section class="row">
-                        <div class="field-input">
-                            <i class="fas fa-user"></i>
-                            <input type="text" name="name" id="name" placeholder="Име" required="" />
-                        </div>
-                    </section>
-                    <section class="row">
-                        <div class="field-input">
-                            <i class="fas fa-envelope"></i>
-                            <input type="email" name="_replyto" id="email" placeholder="Имейл" required="" />
-                        </div>
-                    </section>
-                    <section class="text-area-par">
-                        <textarea name="message" id="message" rows="5" cols="10" placeholder="Въпрос..." required=""></textarea>
-                    </section>
-                    <input type="submit" class="btn" value="ИЗПРАТИ" id="submitMessage" />
-                </fieldset>
-            </form>
-            <section class="form-container-img">
-                <img src="/mongroup/images/instruments.jpg" alt="plumber instruments" />
+        <section class="middle-section-top">
+            <h2 class="content-head is-center">КОНТАКТИ</h2>
+            <section class="middle-section-top-text">
+                <p>Вашите малки и незначителни ВиК проблеми могат да станат сериозни много бързо, така че не се колебайте, а се свържете на посочените телефони възможно най-скоро! Екипът на "Мон груп" реагира бързо и прецизно на спешни повиквания при ВиК
+                    аварии.
+                </p>
+                <p>Имате въпрос към нас? Или просто желаете да направите запитване? Може да използвате формата за запитване, а ние ще ви отговорим възможно най-скоро.</p>
             </section>
         </section>
+        <script data-cfasync="false" src="form-submission-handler.js"></script>
+        <form class="gform pure-form pure-form-stacked" method="POST" data-email="mon.group@mail.bg" action="https://script.google.com/macros/s/AKfycbznbZJ8MuG4PU5tHI-d75_pG9jEup2_w_rB0tdT/exec">
+            <h4>Форма за запитване</h4>
+            <div class="form-elements">
+                <fieldset class="pure-group">
+                    <label id="name-label" for="name">Вашето име:</label>
+                    <input id="name" name="name" placeholder="Вашето име" />
+                </fieldset>
+                <fieldset class="pure-group">
+                    <label id="email-label" for="email">Вашият имейл:</label>
+                    <input id="email" name="email" type="email" value="" required="" placeholder="youremail@email.com" />
+                </fieldset>
+                <fieldset class="pure-group">
+                    <label id="message-label" for="message">Съобщение: </label>
+                    <textarea id="message" name="message" rows="10" placeholder="Съобщение..."></textarea>
+                </fieldset>
+                <fieldset class="pure-group honeypot-field">
+                    <label for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be empty to submit the form! Otherwise, we assume the user is a spam bot.</label>
+                    <input id="honeypot" type="text" name="honeypot" value="" />
+                </fieldset>
+                <button class="button-success pure-button button-xlarge">
+                  <i class="fa fa-paper-plane"></i>&nbsp;ИЗПРАТИ ЗАПИТВАНЕТО</button>
+            </div>
+            <div class="thankyou_message" style="display:none;">
+                <h2>Благодарим ви за запитването! Ще ви отговорим възможно най-скоро!</h2>
+            </div>
+        </form>
     </section>
 </section>
 <div class="hr-purple"></div>
@@ -194,13 +204,7 @@
 </section>
 <p class="creator">&copy;1900-2019 created by Gergana Tsirkova All Rights Reserved</p>
     </footer>
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script> -->
     <script>
-        // $(window).load(function() {
-        //     // Animate loader off screen
-        //     $(".se-pre-con").fadeOut("slow");;
-        // });
         start();
 
         function topFunction() {
@@ -208,6 +212,7 @@
             document.documentElement.scrollTop = 0;
         }
     </script>
+    <script data-cfasync="false" src="form-submission-handler.js"></script>
 </body>
 
 </html>

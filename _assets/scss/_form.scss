@@ -1,0 +1,103 @@
+.middlle-section {
+    margin: 2em;
+    .middle-section-top {
+        .is-center {
+            font-weight: 400;
+            text-align: center;
+            margin: 2em 0 1em;
+        }
+        .middle-section-top-text {
+            text-align: center;
+            padding: 0.3em 1em;
+            color: $base-dark;
+            margin-bottom: 2em;
+            width: 90%;
+            margin: 2em auto;
+        }
+    }
+    h4 {
+        text-align: center;
+        margin-bottom: 0.5em;
+    }
+    .form-elements {
+        margin: 0 auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .pure-group {
+            width: 100%;
+            border: none;
+            margin-bottom: 1em;
+            input,
+            label,
+            textarea {
+                font: inherit;
+                padding: 0.5em 0.8em;
+            }
+            >label {
+                width: 100%;
+                text-align: left;
+                border: none;
+            }
+            >input {
+                width: 100%;
+                outline: none;
+                border: none;
+                border: 2px solid $base-light;
+                margin-top: 0.5em;
+                &::placeholder {
+                    color: #cccccc;
+                }
+                &:hover,
+                &:focus {
+                    border: 2px solid $base-dark;
+                }
+            }
+            >textarea {
+                box-sizing: border-box;
+                width: 100%;
+                resize: none;
+                margin-top: 0.5em;
+                border: 2px solid $base-light;
+                &::placeholder {
+                    color: #cccccc;
+                }
+                &:hover,
+                &:focus {
+                    border: 2px solid $base-dark;
+                    outline: none;
+                }
+            }
+        }
+        .button-success {
+            width: 100%;
+            border: none;
+            padding: 0.8em;
+            color: white;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+            background: $base-light;
+            margin-left: auto;
+            &:hover {
+                background: $base-dark;
+            }
+        }
+        @media screen and (min-width: $breakpoint-phone) and (max-width:$breakpoint-tablet) {
+            width: 80%;
+        }
+        @media screen and (min-width: $breakpoint-tablet) {
+            width: 40%;
+        }
+    }
+    @media screen and(min-width: $breakpoint-phone) {
+        margin: 4em;
+    }
+}
+
+.button-xlarge {
+    font-size: 125%;
+}
+
+.honeypot-field {
+    display: none;
+}
