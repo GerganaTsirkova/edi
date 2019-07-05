@@ -630,8 +630,8 @@ nav.desktop-nav {
   .site-footer > .bottom {
     background: #1c2130;
     padding: 1em 3em 0.5em 3em;
-    background: #1c2130;
-    border: 4px solid #1c2130;
+    background: #090b10;
+    border: 4px solid #090b10;
     font-size: 0.8em;
     text-shadow: 0 2px #1c2130; }
     .site-footer > .bottom > p {
@@ -646,7 +646,7 @@ nav.desktop-nav {
         .site-footer > .bottom > p {
           margin: 0 8em; } }
   .site-footer .creator {
-    background: #1c2130;
+    background: #090b10;
     font-size: 0.6em;
     color: #ABBAEA;
     text-align: center;
@@ -699,7 +699,7 @@ nav.desktop-nav {
       .credentials .credential .credentials-text span {
         margin-right: 0.5em; }
       .credentials .credential .credentials-text a {
-        color: #1c2130; }
+        color: #090b10; }
         .credentials .credential .credentials-text a:hover, .credentials .credential .credentials-text a:focus {
           color: #8298E1; }
   .credentials .data {
