@@ -1,1 +1,1 @@
-Sitemap: /mongroup/sitemap.xml
+Sitemap: https://vikruse.bg/sitemap.xml

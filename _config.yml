@@ -1,10 +1,10 @@
 title: ВиК услуги и ремонти гр.Русе - Мон груп
-email: g_cirkova@mail.bg
+email: mongroup18@gmail.com
 description: Водопроводни и канализационни услуги
 destination: docs
-baseurl: "/mongroup"
+# baseurl: "/mongroup"
 # baseurl: ""
-url: ""
+url: "https://vikruse.bg"
 github_username: GerganaTsirkova
 exclude: [_assets, node_modules, Gemfile, Gemfile.lock, gulpfile.js, package.json, package-lock.json, README.md,docs,licence.txt]
 # Build settings
