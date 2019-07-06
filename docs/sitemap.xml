@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://vikruse.bg/about/</loc>
+<loc>/mongroup/about/</loc>
 </url>
 <url>
-<loc>https://vikruse.bg/contacts/</loc>
+<loc>/mongroup/contacts/</loc>
 </url>
 <url>
-<loc>https://vikruse.bg/</loc>
+<loc>/mongroup/</loc>
 </url>
 <url>
-<loc>https://vikruse.bg/general-items/</loc>
+<loc>/mongroup/general-items/</loc>
 </url>
 <url>
-<loc>https://vikruse.bg/posts/</loc>
+<loc>/mongroup/posts/</loc>
 </url>
 <url>
-<loc>https://vikruse.bg/privacy-policy/</loc>
+<loc>/mongroup/privacy-policy/</loc>
 </url>
 <url>
-<loc>https://vikruse.bg/service-assembly/</loc>
+<loc>/mongroup/service-assembly/</loc>
 </url>
 <url>
-<loc>https://vikruse.bg/service-repairment/</loc>
+<loc>/mongroup/service-repairment/</loc>
 </url>
 </urlset>
