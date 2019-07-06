@@ -1,3 +1,3 @@
-https://GerganaTsirkova.github.io/mongroup
+http://vikruse.bg
 
 Mon group's website
