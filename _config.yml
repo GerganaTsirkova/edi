@@ -4,7 +4,7 @@ description: Водопроводни и канализационни услуг
 destination: docs
 # baseurl: "/mongroup"
 # baseurl: ""
-url: "/mongroup"
+url: "http://vikruse.bg"
 github_username: GerganaTsirkova
 exclude: [_assets, node_modules, Gemfile, Gemfile.lock, gulpfile.js, package.json, package-lock.json, README.md,docs,licence.txt]
 # Build settings
