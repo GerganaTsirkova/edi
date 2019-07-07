@@ -60,32 +60,81 @@ h3 {
                 }
             }
         }
-        .back {
-            padding: 0.5em 1em;
-            margin-top: auto;
-            color: white;
-            background: $base-light;
-            text-decoration: none;
-            outline: none;
-            text-shadow: 0 1px #1c2130;
-            box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.3);
-            -webkit-transition: background-color 0.2s ease-out;
-            -moz-transition: background-color 0.2s ease-out;
-            -o-transition: background-color 0.2s ease-out;
-            -ms-transition: background-color 0.2s ease-out;
-            transition: background-color 0.2s ease-out;
-            i {
-                margin-right: 0.5em;
-            }
-            &:hover {
-                background: $base-dark;
-            }
-        }
         @media screen and(min-width: $breakpoint-tablet) {
             margin: 0 1em;
         }
     }
     @media screen and(min-width: $breakpoint-tablet) {
         flex-direction: row;
+    }
+}
+
+.service-inner-full {
+    margin-top: 2em;
+    >section {
+        float: left;
+        width: 100%;
+        margin-right: 2em;
+        margin-bottom: 0.5em;
+        .service-inner-img-container-full {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.3);
+            &::after {
+                display: block;
+                content: '';
+                padding-top: 56.25%;
+            }
+            img {
+                position: absolute;
+                width: 100%;
+                height: auto;
+                top: 0;
+                left: 0;
+                right: 0;
+            }
+        }
+        >a {
+            font-size: 0.5em;
+        }
+        // @media screen and(min-width:$breakpoint-phone) and(max-width: $breakpoint-tablet) {
+        //     width: 60%;
+        // }
+        // @media screen and(min-width:$breakpoint-tablet)and(max-width: $breakpoint-laptop) {
+        //     width: 50%;
+        // }
+        // @media screen and(min-width:$breakpoint-laptop) {
+        //     width: 40%;
+        // }
+        @media screen and(min-width:$breakpoint-phone) {
+            width: 50%;
+        }
+    }
+}
+
+.back {
+    text-align: center;
+    padding: 0.5em 1em;
+    margin-top: 2em;
+    color: white;
+    background: $base-light;
+    text-decoration: none;
+    outline: none;
+    text-shadow: 0 1px #1c2130;
+    box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.3);
+    -webkit-transition: background-color 0.2s ease-out;
+    -moz-transition: background-color 0.2s ease-out;
+    -o-transition: background-color 0.2s ease-out;
+    -ms-transition: background-color 0.2s ease-out;
+    transition: background-color 0.2s ease-out;
+    i {
+        margin-right: 0.5em;
+    }
+    &:hover {
+        background: $base-dark;
+    }
+    @media screen and(min-width:$breakpoint-phone) {
+        margin: 1.5em auto 0 auto;
     }
 }

@@ -122,6 +122,8 @@
                 display: flex;
                 cursor: pointer;
                 >p:last-of-type {
+                    align-self: flex-start;
+                    min-width: 40%;
                     text-align: center;
                     line-height: 1.5;
                     background: $base-light;
@@ -132,6 +134,12 @@
                     >i {
                         color: white;
                         margin-left: 0.2em;
+                    }
+                    @media screen and(min-width: $breakpoint-phone) and(max-width: $breakpoint-tablet) {
+                        min-width: 35%;
+                    }
+                    @media screen and(min-width: $breakpoint-tablet) {
+                        min-width: 25%;
                     }
                 }
                 &:hover,

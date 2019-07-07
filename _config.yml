@@ -5,6 +5,7 @@ destination: docs
 # baseurl: "/mongroup"
 # baseurl: ""
 url: "http://vikruse.bg"
+# url: ""
 github_username: GerganaTsirkova
 exclude: [_assets, node_modules, Gemfile, Gemfile.lock, gulpfile.js, package.json, package-lock.json, README.md,docs,licence.txt]
 # Build settings
