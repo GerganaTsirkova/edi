@@ -1,3 +1,9 @@
+.is-center-about {
+    font-weight: 400;
+    text-align: center;
+    margin: 2em 0 0.5em;
+}
+
 .about-us h3 {
     text-align: center;
     letter-spacing: 1px;
@@ -6,7 +12,7 @@
 .about-us-top {
     display: flex;
     flex-direction: column;
-    margin: 2em;
+    margin: 1em 2em 2em 2em;
     .about-us-text {
         >.hr-purple {
             margin: 2rem auto;
@@ -45,7 +51,7 @@
     @media screen and(min-width:900px) {
         flex-direction: row;
         align-items: center;
-        margin: 3em 4em;
+        margin: 1em 4em 3em 4em;
         .about-us-text {
             width: 40%
         }

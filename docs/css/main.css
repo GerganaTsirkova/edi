@@ -756,6 +756,11 @@ nav.desktop-nav {
     text-indent: 5%;
     margin-bottom: 1em; }
 
+.is-center-about {
+  font-weight: 400;
+  text-align: center;
+  margin: 2em 0 0.5em; }
+
 .about-us h3 {
   text-align: center;
   letter-spacing: 1px; }
@@ -763,7 +768,7 @@ nav.desktop-nav {
 .about-us-top {
   display: flex;
   flex-direction: column;
-  margin: 2em; }
+  margin: 1em 2em 2em 2em; }
   .about-us-top .about-us-text > .hr-purple {
     margin: 2rem auto;
     background: #8298E1;
@@ -794,7 +799,7 @@ nav.desktop-nav {
     .about-us-top {
       flex-direction: row;
       align-items: center;
-      margin: 3em 4em; }
+      margin: 1em 4em 3em 4em; }
       .about-us-top .about-us-text {
         width: 40%; }
       .about-us-top .about-us-top-img {
