@@ -43,9 +43,11 @@
             }
         }
         .attribution a {
-            font-size: 0.4em;
+            font-size: 0.6em;
             position: absolute;
             right: 10em;
+            margin-top: 1rem;
+            margin-left: auto;
         }
     }
     @media screen and(min-width:900px) {
@@ -115,7 +117,8 @@
         margin-bottom: 1em;
         color: $gray;
         position: absolute;
-        font-size: 0.5em;
+        font-size: 0.6em;
+        margin-right: 3rem;
         bottom: 2%;
         right: 2%;
     }
