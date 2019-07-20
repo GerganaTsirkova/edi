@@ -7,6 +7,7 @@ destination: docs
 url: "https://vikruse.bg"
 # url: ""
 github_username: GerganaTsirkova
+keywords: [Mongroup, Mon group, Mongrup, Mon grup, Монгруп, Мон груп, ВиК Русе, ViK Ruse]
 exclude: [_assets, node_modules, Gemfile, Gemfile.lock, gulpfile.js, package.json, package-lock.json, README.md,docs,licence.txt]
 # Build settings
 markdown: kramdown
