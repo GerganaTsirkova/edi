@@ -1,6 +1,6 @@
 ---
 layout: page
-title: contacts
+title: ВиК услуги и ремонти гр. Русе контакти
 permalink: /contacts/
 ---
 

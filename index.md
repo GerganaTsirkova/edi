@@ -1,14 +1,6 @@
 ---
 layout: page
-keywords:
- - ВиК Русе
- - ViK Ruse
- - Mongroup
- - Mon group
- - Mongrup
- - Mon grup
- - Монгруп
- - Мон груп
+title: ВиК ремонти и услуги Русе
 ---
 
 {% include first-page.html %}
