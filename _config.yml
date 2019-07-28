@@ -1,10 +1,13 @@
 title: ВиК услуги и ремонти гр.Русе - Мон груп ЕООД
 email: mongroup18@gmail.com
-description: Фирма Мон груп предлага водопроводни и канализационни услуги и ремонти на територията на гр. Русе и околността
+description: Фирма Мон груп предлага експресни водопроводни и канализационни услуги и ремонти на територията на гр. Русе и околността.
+summary: Експресни водопроводни и канализационни услуги и ремонти на територията на гр. Русе и околността.
+tags: [Mongroup, Mon group, Mongrup, Mon grup, Монгруп, Мон груп, ВиК Русе, ViK Ruse, ВИК услуги Русе, VIK uslugi ruse, VIK avarii Ruse, ВИК Аварии Русе]
 destination: docs
 url: "https://vikruse.bg"
+# url: ""
 github_username: GerganaTsirkova
-keywords: [Mongroup, Mon group, Mongrup, Mon grup, Монгруп, Мон груп, ВиК Русе, ViK Ruse]
+keywords: [Mongroup, Mon group, Mongrup, Mon grup, Монгруп, Мон груп, ВиК Русе, ViK Ruse, ВИК услуги Русе, VIK uslugi ruse, VIK avarii Ruse, ВИК Аварии Русе]
 exclude: [_assets, node_modules, Gemfile, Gemfile.lock, gulpfile.js, package.json, package-lock.json, README.md,docs,licence.txt]
 markdown: kramdown
 plugins:
