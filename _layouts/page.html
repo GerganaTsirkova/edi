@@ -6,6 +6,9 @@
 </head>
 
 <body>
+    <div class="spinner-wrapper">
+        <div class="spinner"></div>
+    </div>
     <header class="site-header">
         {% include header-page.html %}
     </header>
@@ -16,6 +19,13 @@
     <footer class="site-footer">
         {% include footer.html %}
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+    <script>
+        $(window).load(function() {
+            $(".spinner-wrapper").fadeOut("slow");;
+        });
+    </script>
     <script>
         start();
 
