@@ -20,18 +20,10 @@
     },
     "homepage": "https://github.com/GerganaTsirkova/mongroup#readme",
     "devDependencies": {
-        "axios": "^0.19.2",
-        "browser-sync": "^2.26.7",
-        "child_process": "^1.0.2",
-        "css-minify": "^1.0.1",
-        "gh-pages": "^2.2.0",
+        "browser-sync": "^2.26.12",
         "gulp": "^4.0.2",
         "gulp-autoprefixer": "^6.1.0",
         "gulp-exec": "^3.0.2",
-        "gulp-sass": "^4.0.2",
-        "lodash": "^4.17.15",
-        "lodash.template": ">=4.5.0",
-        "node-sass": "^4.13.1",
-        "tar": "^4.4.13"
+        "gulp-sass": "^4.0.2"
     }
 }
