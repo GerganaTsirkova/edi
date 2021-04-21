@@ -20,14 +20,11 @@
     },
     "homepage": "https://github.com/GerganaTsirkova/mongroup#readme",
     "devDependencies": {
-        "browser-sync": "^2.26.12",
+        "browser-sync": "^2.26.14",
         "gulp": "^4.0.2",
         "gulp-autoprefixer": "^6.1.0",
         "gulp-exec": "^3.0.2",
-        "gulp-sass": "^4.0.2"
-    },
-    "dependencies": {
-        "browserslist": "^4.14.2",
-        "caniuse-lite": "^1.0.30001125"
+        "gulp-sass": "^4.1.0",
+        "node-sass": "^4.14.1"
     }
 }
